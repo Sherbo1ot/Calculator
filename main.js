@@ -1,38 +1,41 @@
 let num1, num2, result;
 
-function plus() {
+function resultFunc() {
+  document.getElementById("out").innerHTML = result;
+}
+function getElementNum() {
   num1 = document.getElementById("n1").value;
-  num1 = parseInt(num1);
   num2 = document.getElementById("n2").value;
+}
+function plus() {
+  getElementNum();
+  num1 = parseInt(num1);
   num2 = parseInt(num2);
 
   result = num1 + num2;
 
-  document.getElementById("out").innerHTML = result;
+  resultFunc();
 }
 
 function min() {
-  num1 = document.getElementById("n1").value;
-  num2 = document.getElementById("n2").value;
+  getElementNum();
 
   result = num1 - num2;
 
-  document.getElementById("out").innerHTML = result;
+  resultFunc();
 }
 
 function umn() {
-  num1 = document.getElementById("n1").value;
-  num2 = document.getElementById("n2").value;
+  getElementNum();
 
   result = num1 * num2;
 
-  document.getElementById("out").innerHTML = result;
+  resultFunc();
 }
 function rzdlt() {
-  num1 = document.getElementById("n1").value;
-  num2 = document.getElementById("n2").value;
+  getElementNum();
 
   result = num1 / num2;
 
-  document.getElementById("out").innerHTML = result;
+  resultFunc();
 }
