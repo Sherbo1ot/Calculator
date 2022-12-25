@@ -34,7 +34,15 @@ button {
   width: 150px;
   height: 40px;
   font-size: 30px;
+  border-radius: 20px;
+  text-align: center;
   margin: 5px;
   background-color: rgb(255, 196, 0);
   border: none;
+  transition: .4s;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(28, 27, 27);
 }
